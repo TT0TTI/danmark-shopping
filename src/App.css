@@ -1,0 +1,251 @@
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+span{
+    display: block;
+}
+
+#header h1{
+    background-color: #ffffff;
+}
+
+#header h1 .logo {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 65px;
+    background-color: yellow;
+}
+
+#header .logo img{
+    position: absolute;
+
+    top: 0;
+    margin-top: 23px;
+
+    left: 50%;
+    margin-left: -93px;
+}
+
+#header .buttons li{
+    position: relative;
+    float: left;
+
+    width: 33.33%;
+    height: 65px;
+    border: 5px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#header .buttons li:nth-child(1) {
+    background-color: red;
+}
+
+#header .buttons li:nth-child(2) {
+    background-color: purple;
+}
+
+#header .buttons li:nth-child(3) {
+    background-color: blue;
+}
+
+#header .buttons li img{
+    position: relative;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media(min-width:47em){
+    #header{
+        position: fixed;
+        width: 100%;
+        height: 80px;
+
+        top: 0;
+        left: 0;
+
+        z-index: 8;
+    }
+
+    #header h1{
+        width: 50%;
+    }
+
+    #header .logo{
+        width: 200px;
+        height: 80px;
+    }
+
+    #header .logo img{
+        margin-top: 30px;
+    }
+
+    #header .buttons{
+        position: absolute;
+        width: 50%;
+
+        left: 50%;
+        top: 0;
+    }
+
+    #header .buttons li {
+        height: 80px;
+    }
+}
+
+/*main*/
+.main-content .product-group-list{
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 58.25%;
+    border: solid 10px red;
+
+    overflow: hidden;
+}
+
+.main-content .product-group-list img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-content .product-group .line-text{
+    position: absolute;
+    bottom: 25px;
+
+    color: black;
+    font-size: 25px;
+}
+
+@media(min-width: 47em){
+    .main-content {
+        padding-top: 80px;
+    }
+}
+
+@media(min-width: 60em){
+    .main-content{
+        overflow: hidden;
+    }
+
+    .main-content .product-group-list{
+        float: left;
+        width: 50%;
+        height: 28.125%;
+    }
+}
+
+/*footer*/
+#footer{
+    position: relative;
+    background-color: yellow;
+    padding-bottom: 66px;
+}
+
+#footer .left-nav{
+    padding-top: 20px;
+    text-align: center;
+}
+
+#footer .left-nav li {
+    padding: 5px 0;
+}
+
+#footer .right-methods{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#footer .right-methods li{
+    display: inline-block;
+    padding: 7px 4px;
+}
+
+#footer .right-methods .payment-icon{
+    display: inline-block;  
+    width: 30px;
+    height: 20px;
+}
+
+#footer .right-methods .payment-icon.one{
+    background-color: black;
+}
+
+#footer .right-methods .payment-icon.two{
+    background-color: red;
+}
+
+#footer .right-methods .payment-icon.three{
+    background-color: blue;
+}
+
+#footer .right-methods .payment-icon.four{
+    background-color: gray;
+}
+
+#footer .right-methods .payment-icon.five{
+    background-color: green;
+}
+
+#footer .to-top-button{
+    position: absolute;
+    display: block;
+
+    width: 66px;
+    height: 66px;
+    background-color: green;
+    bottom: 0;
+    left: 50%;
+    margin-left: -33px;
+}
+
+@media(min-width: 60em){
+    #footer .left-nav{
+        float: left;
+        width: 50%;
+        text-align: left;
+        padding-top: 32px;
+        padding-left: 40px;
+    }
+
+    #footer .right-methods{
+        float: right;
+        width: 50%;
+        margin: 0;
+        padding-top: 32px;
+        padding-right: 40px;
+        text-align: right;
+    }
+
+    #footer ul, #footer li, #footer h3{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #footer .left-nav a {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    #footer .right-methods li {
+        padding: 0 4px;
+    }
+
+    #footer h3{
+        padding-right: 10px;
+    }
+}
